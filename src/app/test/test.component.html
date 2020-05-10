@@ -1,0 +1,14 @@
+<div class="container">
+    <p>
+        <!--Braces Binding-->
+        hello {{Name}}
+    </p>
+    <p>
+        <!--Property Binding-->
+        <img [src]="getImageUrl()" width="100px" alt="book Logo"  />
+    </p>
+    <p>
+        <!--Event Binding-->
+        <button (click)="DisplayName(Name)" class="btn btn-info">Display The Name</button>
+    </p>
+</div>

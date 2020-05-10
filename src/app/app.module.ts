@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
 		RegisterComponent,
 		BookListComponent,
 		NavbarComponent,
-		FooterComponent
+		FooterComponent,
+		TestComponent
 	],
 	imports: [
 		// Array : libraries used in project
