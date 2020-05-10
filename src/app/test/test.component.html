@@ -11,4 +11,13 @@
         <!--Event Binding-->
         <button (click)="DisplayName(Name)" class="btn btn-info">Display The Name</button>
     </p>
+    <hr/>
+        <!-- ngFor Directive -->
+        <ul *ngFor="let bookItem of BookList">
+            <li *ngIf="PositionNumber(); else elseBlock" class="alert alert-info">{{ bookItem }}</li>
+            <ng-template #elseBlock ><li> {{ bookItem }} </li></ng-template>
+        </ul>
+
+        <div *ngIf="BookList.length === 0" class="alert alert-warning">No Book Found </div>
+
 </div>
